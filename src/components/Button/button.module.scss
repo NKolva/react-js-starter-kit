@@ -1,0 +1,24 @@
+@import '../../sass/varriables';
+
+.Button,
+.ButtonPrimary,
+.ButtonSecondary,
+.ButtonDanger {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+
+  &Primary {
+    color: $white;
+    background-color: $blue;
+  }
+  &Secondary {
+    background-color: $white;
+    border: 1px solid $blue;
+  }
+  &Danger {
+    color: $white;
+    background-color: $red;
+  }
+}

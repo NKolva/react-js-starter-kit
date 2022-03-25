@@ -2,9 +2,23 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# BEFORE INSTALLING NPM PACKEGES - USE IN CONSOLE `npm install -g json-server`
+
+# AVAILABLE .ENV FILES
+
+Before starting application, please, be sure what you created .env.development file
+
+.env.development
+.env.production
+
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm run database`
+
+Runs the locally installed database, Be sure what you install json-server `npm install -g json-server`\
+Open [http://localhost:3004](http://localhost:3004) to view it in your browser.
 
 ### `npm start`
 

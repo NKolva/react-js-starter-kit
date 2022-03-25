@@ -1,0 +1,25 @@
+.PublicHome {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-color: #a5a5a5;
+
+  &Label {
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+
+  &CreatePost {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &Posts {
+    margin-left: 20px;
+
+    &Item {
+      border: 1px solid red;
+      margin-top: 10px;
+    }
+  }
+}
