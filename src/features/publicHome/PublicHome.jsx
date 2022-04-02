@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { toast } from 'react-toastify';
 
@@ -18,7 +19,7 @@ import classes from './publicHome.module.scss';
 
 export const PublicHome = () => {
   const dispatch = useDispatch();
-  // const history = useHistory();
+  const history = useHistory();
 
   console.log('calculate', calculate(10, 20));
 
@@ -49,9 +50,9 @@ export const PublicHome = () => {
 
   const onClickSuccesToastMessage = useCallback(() => {
     setIsVisibleModal((prev) => !prev);
-    // history.push('/');
+    history.push('/public-two');
     // toast('Success', { type: 'success' });
-  }, []);
+  }, [history]);
 
   const onClickWarningToastMessage = useCallback((event) => {
     toast('Warning', { type: 'warning' });
